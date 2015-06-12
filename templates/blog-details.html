@@ -13,7 +13,8 @@
 
         <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">        
         <link rel="stylesheet" href="../css/bootstrap/bootstrap-theme.min.css"> 
-        <link rel="stylesheet/less" href="../css/modules/editor/editor-blog-listing.less"> 
+        <link rel="stylesheet/less" href="../css/modules/blog/blog-details.less"> 
+        <link rel="stylesheet/less" href="../css/base/layout.less"> 
         <link rel="stylesheet/less" href="../css/components/user.less">
 
         <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -22,64 +23,103 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <nav class="navbar navbar-inverse ">
+          <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">Simple Blog</a>
-            </div>
-            <div>
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="../templates/home.html">Home</a></li>
-                <li><a href="#">Add Blog</a></li>
-                <li><a href="#">My Account</a></li>
-                <li><a href="#">Sign Out</a></li>
-              </ul>
-            </div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                    </button>
+                  <a class="navbar-brand nav" href="#">Simple Blog</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <div class="navbar-form navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="../templates/home.html">Home</a></li>
+                            <li><a href="#">Add Blog</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Sign Out</a></li>
+                        </ul>                      
+                    </div>
+                </div><!--/.navbar-collapse -->          
             </div>
         </nav>
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
-            <div class="container">
-                <!-- Example row of columns -->
-                <div class="row ">
-                    <div class="col-md-8 col-md-offset-2 col-xs-12  panel-group">                    
-                       <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Post title</h3>
-                            </div>
-                            <div class="panel-body">
-                                
-                                <div class="blog-user-info pull-left">
-                                    <img src="../img/default-user.jpg" class="img-circle user-profile-image" alt="Cinque Terre" >
-                                    <div class="blog-username text-wrap"> Username</div>
-                                </div>
-                                <div class="blog-content">
-                                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-                                </div>
-                                <div class="blog-operation-container text-center">
-                                    <a class="btn btn-primary btn-sm" href="#" role="button">View Details</a>
-                                    <a class="btn btn-warning btn-sm" href="#" role="button">Update</a>
-                                    <a class="btn btn-danger btn-sm" href="#" data-toggle="modal" data-target="#blog-delete-modal" role="button">Delete</a>
-                                </div>
-                            </div>                         
-                       </div>  
-                    </div>                    
-              </div>
-              <nav>
-                <ul class="pager">
-                  <li><a href="#">Previous</a></li>
-                  <li><a href="#">Next</a></li>
-                </ul>
-              </nav>
-
-              <hr>
-
-              <footer>
-                <p>&copy; Company 2015</p>
-              </footer>
-
-            </div> <!-- /container -->  
+            <div class="container blog-heading">
+                <h1 class="text-center">Blog Post title</h1>
+                <div class="text-right post-by">
+                    <h4 class="text-right">                       
+                        <img src="../img/default-user.png" class="img-rounded user-profile-image" alt="Cinque Terre" >
+                        <span class="text-wrap">
+                            <a href="#">Username</a>
+                        </span>
+                        <div class="blog-post-meta text-italic">December 23, 2014</div>
+                    </h4>
+                </div>
+               
+            </div>
         </div>
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row ">
+                <div class="col-md-8 col-md-offset-2 col-xs-12  panel-group">                    
+                    <div class="blog-content">
+                        <p>
+                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                        </p>
+
+                        <video>
+                            <source src="../uploads/installing _ Introducin_ Gulp.mp4" type="video/mp4">                           
+                            Your browser does not support the video tag.
+                        </video>
+
+                         <p>
+                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                        </p>
+
+                        <p>
+                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                        </p>
+                        <div class="img-container">
+
+                            <img src="../uploads/cinqueterre.jpg" class="img-responsive" alt="Cinque Terre">
+                        </div>
+
+
+                        <p>
+                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                        </p>
+
+
+                    </div>
+
+                    <div class="blog-operation-container text-center">
+                        <a class="btn btn-primary btn-sm" href="#" role="button">View Details</a>
+                        <a class="btn btn-warning btn-sm" href="#" role="button">Update</a>
+                        <a class="btn btn-danger btn-sm" href="#" data-toggle="modal" data-target="#blog-delete-modal" role="button">Delete</a>
+                    </div>
+                                              
+                </div>  
+            </div>                    
+        </div>
+        <nav>
+            <ul class="pager">
+              <li><a href="#">Previous</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </nav>
+
+          <hr>
+
+          <footer>
+            <p>&copy; Company 2015</p>
+          </footer>
+
+        </div> <!-- /container -->  
+     
 
 
 
