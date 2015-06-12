@@ -32,7 +32,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                     </button>
-                  <a class="navbar-brand nav" href="#">Simple Blog</a>
+                  <a class="navbar-brand nav" href="/templates/editor-blog-listing.html">Simple Blog</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <div class="navbar-form navbar-right">
@@ -40,7 +40,7 @@
                             <li class="active"><a href="../templates/home.html">Home</a></li>
                             <li><a href="#">Add Blog</a></li>
                             <li><a href="#">My Account</a></li>
-                            <li><a href="#">Sign Out</a></li>
+                            <li><a href="/templates/home.html">Sign Out</a></li>
                         </ul>                      
                     </div>
                 </div><!--/.navbar-collapse -->          
@@ -70,11 +70,12 @@
                         <p>
                             Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
                         </p>
-
-                        <video>
-                            <source src="../uploads/installing _ Introducin_ Gulp.mp4" type="video/mp4">                           
-                            Your browser does not support the video tag.
-                        </video>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="../uploads/installing _ Introducin_ Gulp.mp4" type="video/mp4">                           
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
 
                          <p>
                             Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
@@ -84,7 +85,6 @@
                             Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
                         </p>
                         <div class="img-container">
-
                             <img src="../uploads/cinqueterre.jpg" class="img-responsive" alt="Cinque Terre">
                         </div>
 
@@ -97,7 +97,7 @@
                     </div>
 
                     <div class="blog-operation-container text-center">
-                        <a class="btn btn-primary btn-sm" href="#" role="button">View Details</a>
+                        <a class="btn btn-primary btn-sm" href="/templates/editor-blog-listing.html" role="button">Back</a>
                         <a class="btn btn-warning btn-sm" href="#" role="button">Update</a>
                         <a class="btn btn-danger btn-sm" href="#" data-toggle="modal" data-target="#blog-delete-modal" role="button">Delete</a>
                     </div>
