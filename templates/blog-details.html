@@ -23,7 +23,7 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-          <nav class="navbar navbar-inverse navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -32,13 +32,13 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                     </button>
-                  <a class="navbar-brand nav" href="/templates/editor-blog-listing.html">Simple Blog</a>
+                    <a class="navbar-brand nav" href="/templates/editor-blog-listing.html">Simple Blog</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <div class="navbar-form navbar-right">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="../templates/home.html">Home</a></li>
-                            <li><a href="#">Add Blog</a></li>
+                            <li class="active"><a href="../templates/editor-blog-listing.html">Dashboard</a></li>
+                            <li><a href="/templates/add-edit-blog.html">Add Blog</a></li>
                             <li><a href="#">My Account</a></li>
                             <li><a href="/templates/home.html">Sign Out</a></li>
                         </ul>                      
@@ -46,81 +46,74 @@
                 </div><!--/.navbar-collapse -->          
             </div>
         </nav>
+
+
         <!-- Main jumbotron for a primary marketing message or call to action -->
         <div class="jumbotron">
             <div class="container blog-heading">
                 <h1 class="text-center">Blog Post title</h1>
-                <div class="text-right post-by">
-                    <h4 class="text-right">                       
-                        <img src="../img/default-user.png" class="img-rounded user-profile-image" alt="Cinque Terre" >
+                <div class="text-right post-by">    
+                    <img src="../img/default-user.png" class="img-rounded user-profile-image" alt="Cinque Terre" >
+                    <h4>
                         <span class="text-wrap">
                             <a href="#">Username</a>
                         </span>
-                        <div class="blog-post-meta text-italic">December 23, 2014</div>
                     </h4>
+                    <div class="blog-post-meta"><h4>December 23, 2014</h4></div>
                 </div>
-               
             </div>
         </div>
+
+
         <div class="container">
             <!-- Example row of columns -->
             <div class="row ">
-                <div class="col-md-8 col-md-offset-2 col-xs-12  panel-group">                    
+                <div class="col-md-8 col-md-offset-2 col-xs-12  panel-group">
                     <div class="blog-content">
                         <p>
                             Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
                         </p>
                         <div class="video-container">
                             <video controls>
-                                <source src="../uploads/installing _ Introducin_ Gulp.mp4" type="video/mp4">                           
+                                <source src="../uploads/installing-Introducin-Gulp.mp4" type="video/mp4">                           
                                 Your browser does not support the video tag.
                             </video>
                         </div>
-
-                         <p>
+                        <p>
                             Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
                         </p>
-
                         <p>
                             Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
                         </p>
                         <div class="img-container">
                             <img src="../uploads/cinqueterre.jpg" class="img-responsive" alt="Cinque Terre">
                         </div>
-
-
                         <p>
                             Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
                         </p>
-
-
                     </div>
 
                     <div class="blog-operation-container text-center">
                         <a class="btn btn-primary btn-sm" href="/templates/editor-blog-listing.html" role="button">Back</a>
-                        <a class="btn btn-warning btn-sm" href="#" role="button">Update</a>
+                        <a class="btn btn-warning btn-sm" href="/templates/add-edit-blog.html" role="button">Update</a>
                         <a class="btn btn-danger btn-sm" href="#" data-toggle="modal" data-target="#blog-delete-modal" role="button">Delete</a>
-                    </div>
-                                              
+                    </div>                                              
                 </div>  
             </div>                    
         </div>
+
         <nav>
             <ul class="pager">
-              <li><a href="#">Previous</a></li>
-              <li><a href="#">Next</a></li>
+                <li><a href="#">Previous</a></li>
+                <li><a href="#">Next</a></li>
             </ul>
-          </nav>
+        </nav>
 
-          <hr>
+        <hr>
 
-          <footer>
+        <footer>
             <p>&copy; Company 2015</p>
-          </footer>
-
-        </div> <!-- /container -->  
-     
-
+        </footer>
 
 
         <!-- Modal -->
